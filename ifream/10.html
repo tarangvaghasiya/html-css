@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Navigation Frame</title>
+  <style>
+    nav { margin-bottom: 15px; }
+    nav a { margin-right: 15px; text-decoration: none; font-family: sans-serif; }
+    iframe { border: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://www.example.com" target="targetFrame">Example 1</a>
+    <a href="https://www.example.org" target="targetFrame">Example 2</a>
+    <a href="https://www.wikipedia.org" target="targetFrame">Example 3</a>
+  </nav>
+
+  <iframe name="targetFrame" src="https://www.example.com" width="100%" height="400" title="Navigation Content Window"></iframe>
+
+</body>
+</html>

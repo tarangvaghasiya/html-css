@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iframe Permission Comparison</title>
+  <style>
+    iframe {
+      width: 48%;
+      height: 350px;
+      display: inline-block;
+      border: 1px solid #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Permission Comparison: Fullscreen Allowed vs No Permission</h2>
+
+  <!-- Frame with Fullscreen Allowed -->
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="fullscreen" allowfullscreen title="Video Player with Fullscreen Permission Allowed"></iframe>
+
+  <!-- Frame with No Allow Attribute -->
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Player Restricted without Fullscreen Permission"></iframe>
+
+</body>
+</html>

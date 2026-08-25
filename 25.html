@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Page Dashboard Layout</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    .layout-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      height: 60px;
+      background-color: #1e293b;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .full-iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout-container">
+    <header>
+      <h2>System Main Dashboard</h2>
+    </header>
+    <iframe class="full-iframe" src="https://dashboard.example.com" allow="fullscreen; gyroscope; usb" allowfullscreen title="Full Screen Viewport System Dashboard"></iframe>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Iframe Best Practices Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #fafafa;
+    }
+    .frame-section {
+      margin-bottom: 30px;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+    }
+    .comment-box {
+      background-color: #f1f5f9;
+      padding: 8px 12px;
+      border-left: 4px solid #3b82f6;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Best-Practice Iframe Implementations</h1>
+
+  <!-- Standard Webpage View: No special hardware or browser permissions needed, so allow attribute is omitted for maximum restriction -->
+  <div class="frame-section">
+    <div class="comment-box">
+      <strong>Note:</strong> Standard webpage embed — no special permissions are required, maintaining strict sandbox security.
+    </div>
+    <iframe src="https://www.example.com" height="300" title="Standard Webpage Viewer"></iframe>
+  </div>
+
+  <!-- Interactive 3D Video View: Needs fullscreen presentation and orientation tracking, so fullscreen and gyroscope are explicitly granted -->
+  <div class="frame-section">
+    <div class="comment-box">
+      <strong>Note:</strong> Interactive 3D Video — requires fullscreen permission for presentation and gyroscope access for head/device tracking.
+    </div>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" height="400" allow="fullscreen; gyroscope" allowfullscreen title="Interactive 3D Video Player"></iframe>
+  </div>
+
+  <!-- USB Hardware Controller View: Needs direct access to WebUSB API hardware devices, so usb permission is granted -->
+  <div class="frame-section">
+    <div class="comment-box">
+      <strong>Note:</strong> Hardware Controller — requires explicit access to WebUSB API for managing connected USB hardware peripherals.
+    </div>
+    <iframe src="https://device.example.com" height="350" allow="usb" title="Hardware USB Controller Dashboard"></iframe>
+  </div>
+
+</body>
+</html>

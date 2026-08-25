@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Permission Feature Comparison</title>
+  <style>
+    .comparison-frame {
+      width: 48%;
+      height: 400px;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Version A: Fullscreen Only -->
+  <iframe class="comparison-frame" src="https://demo.example.com" allow="fullscreen" allowfullscreen title="Version A - Minimal Fullscreen Access"></iframe>
+
+  <!-- Version B: Fullscreen, Gyroscope, USB -->
+  <iframe class="comparison-frame" src="https://demo.example.com" allow="fullscreen; gyroscope; usb" allowfullscreen title="Version B - Expanded Fullscreen, Gyroscope, and USB Access"></iframe>
+
+</body>
+</html>
