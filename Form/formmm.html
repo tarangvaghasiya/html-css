@@ -61,7 +61,7 @@
         
     </form>
 
-    <form>
+    <form autocomplete="on" action="/submit" id="111">
         <input type="hidden"  name="userid" value="123">
         <input type="text" id="" value="123">
         <input type="submit" value="submit">
@@ -69,6 +69,46 @@
         <input type="image" src="images.png">
         <input type="month" name="" id="" min="january, 2026">
         <input type="number" name="" id="" min="20" max="60">
+        <br>
+        <lable>search</lable> 
+        <input type="search">
+        <br>
+        <label for="tel">phone no.</label>
+        <input type="tel" name="" id="tel">
+        <br>
+        <label for="url">url</label>
+        <input type="url" name="" id="url">
+        <br>
+        <label for="time">time</label>
+        <input type="time" name="" id="time" autofocus>
+        <br>
+        <label for="week">week</label>
+        <input type="week" name="" id="week">
+        <br>
+        <lable for="mon">month</lable>
+        <input type="month" name="" id="mon">
+        <br>
+        <label>select file</label>
+        <input type="file" name="" id="" multiple>
+        <br>
+        <input type="date" min="10-8-2026" max="20-8-2026" required>
+        <br>
+        <input type="text" pattern="[e-j]{5}" autofocus>
+        <br>
+        <input type="number" name="" id="" step="2.8">
+        <br>
+        <input list="name" autocomplete="on">
+        <datalist id="name">
+            <option value="tarang">
+                 <option value="jeet">
+                     <option value="gunjan">
+        </datalist>
+        <input type="file" accept=".pdf",.jpg>
+        <br>
+       
+
     </form>
+     <input type="text" form="111">
+     
 </body>
 </html>
